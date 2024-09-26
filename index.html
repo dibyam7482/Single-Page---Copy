@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Page</title>
+    <link rel="stylesheet" href="src/output.css">
+    <!-- <link rel="stylesheet" href="build.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-[#BBE9FF] font-san text-[#d58d3a] ">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md py-4 text-3xl justify-between">
+        <div class="container mx-auto px-4 flex justify-between">
+            <nav class="log mx-1 ">
+                <img src="assets/img/badge.png" class="h-16 mx-4" alt="Logo" />
+
+            </nav>
+
+            <div>
+
+                <ul class="flex space-x-6" style="  align-items: baseline">
+                    <li><a href="#home" class="hover:text-[#6c6a67]">Home</a></li>
+                    <li><a href="#faq" class="hover:text-[#5c5a59]">FAQ</a></li>
+                    <li><a href="#about" class="hover:text-[#6c6b69]">About</a></li>
+                    <li><a href="#contact" class="hover:text-[#7a7978]">Contact</a></li>
+                    <button class="bg-[#73694d] hover:bg-[#bea356] text-white py-4 px-4 rounded text-md">
+                        <span>Register</span>
+                    </button>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section id="home" class="bg-white h-screen flex items-center justify-center">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+                <div class="mx-11">
+                    <img class="mx-1 my-0 flex max-w-md" src="assets/img/home page.jpg" alt="Our aim image">
+                </div>
+                <div class="text-center">
+                    <h1 class="text-5xl font-bold mb-4">Welcome to MyWebsite</h1>
+                    <p class="text-xl mb-8">Welcome to my collegeWalla website</p>
+                    <a href="#about"
+                        class="bg-white text-[#d58d3a] py-2 px-6 rounded-full shadow-md font-semibold hover:bg-gray-200">Learn
+                        More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Aim Section -->
+
+    <section id="aim" class="py-16 bg-[#BBE9FF] mx-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8">Our Aim</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-64">
+                <div class="pt-20">
+                    <h3 class="text-2xl font-semibold mb-4">Our Mission</h3>
+                    <p class="text-gray-700 flex ">
+                        As a dedicated college student, my primary goal is to excel academically while building
+                        practical
+                        skills that will prepare me for a successful career. I aim to apply my knowledge through
+                        internships, projects, and leadership roles, constantly seeking opportunities to grow both
+                        professionally and personally.
+                    </p>
+                    <br>
+                    <p class="text-gray-700 flex ">
+                        As a dedicated college student, my primary goal is to excel academically while building
+                        practical
+                        skills that will prepare me for a successful career. I aim to apply my knowledge through
+                        internships, projects, and leadership roles, constantly seeking opportunities to grow both
+                        professionally and personally.
+                    </p>
+
+                </div>
+                <div>
+                    <img class="mx-1 my-0 flex max-w-md" src="assets/img/Goal.svg" alt="Our aim image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules section -->
+
+
+
+    <section id="rules" class=" bg-white h-screen">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8">Our Rules</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-64">
+                <div>
+                    <img class="mx-1 my-0 flex max-w-xl" src="assets/img/Rules.jpg" alt="Our aim image">
+                </div>
+                <div class="pt-20 pr-12">
+                    <h3 class="text-2xl font-semibold mb-4">Our Mission</h3>
+                    <p class="text-gray-700 flex ">
+                        As a dedicated college student, my primary goal is to excel academically while building
+                        practical
+                        skills that will prepare me for a successful career. I aim to apply my knowledge through
+                        internships, projects, and leadership roles, constantly seeking opportunities to grow both
+                        professionally and personally.
+                    </p>
+                    <br>
+                    <p class="text-gray-700 flex ">
+                        As a dedicated college student, my primary goal is to excel academically while building
+                        practical
+                        skills that will prepare me for a successful career. I aim to apply my knowledge through
+                        internships, projects, and leadership roles, constantly seeking opportunities to grow both
+                        professionally and personally.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ Section -->
+
+    <section id="rules" class=" bg-[#BBE9FF] h-screen">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8">FAQ</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-64">
+
+                <div class="pl-20">
+                    <ol>
+                        <li>
+                            <p>Q.1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam molestias ex, porro
+                                iste autem dignissimos voluptas? Quisquam labore saepe repellendus!</p>
+                        </li>
+                        <li>
+                            <!-- Accordion Item 1 -->
+                            <div class="border-b border-slate-200">
+                                <button onclick="toggleAccordion(1)"
+                                    class="w-full flex justify-between items-center py-5 text-slate-800">
+                                    <span> 1. Can You create custiom offers?</span>
+                                    <span id="icon-1" class="text-slate-800 transition-transform duration-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                            class="w-4 h-4">
+                                            <path
+                                                d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div id="content-1"
+                                    class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                    <div class="pb-5 text-sm text-slate-500">
+                                        Material Tailwind is a framework that enhances Tailwind CSS with additional
+                                        styles and components.
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- Accordion Item 2 -->
+                            <div class="border-b border-slate-200">
+                                <button onclick="toggleAccordion(2)"
+                                    class="w-full flex justify-between items-center py-5 text-slate-800">
+                                    <span> 2. How will the work be returned</span>
+                                    <span id="icon-2" class="text-slate-800 transition-transform duration-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                            class="w-4 h-4">
+                                            <path
+                                                d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div id="content-2"
+                                    class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                    <div class="pb-5 text-sm text-slate-500">
+                                        You can use Material Tailwind by importing its components into your Tailwind CSS
+                                        project.
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- Accordion Item 3 -->
+                            <div class="border-b border-slate-200">
+                                <button onclick="toggleAccordion(3)"
+                                    class="w-full flex justify-between items-center py-5 text-slate-800">
+                                    <span> 3. What language write in ?</span>
+                                    <span id="icon-3" class="text-slate-800 transition-transform duration-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                            class="w-4 h-4">
+                                            <path
+                                                d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div id="content-3"
+                                    class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                    <div class="pb-5 text-sm text-slate-500">
+                                        Material Tailwind allows you to quickly build modern, responsive websites with a
+                                        focus on design.
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- Accordion Item 4 -->
+                            <div class="border-b border-slate-200">
+                                <button onclick="toggleAccordion(1)"
+                                    class="w-full flex justify-between items-center py-5 text-slate-800">
+                                    <span> 4. Can you guarante imporoved search rankings.?</span>
+                                    <span id="icon-1" class="text-slate-800 transition-transform duration-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                            class="w-4 h-4">
+                                            <path
+                                                d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div id="content-1"
+                                    class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                    <div class="pb-5 text-sm text-slate-500">
+                                        Material Tailwind is a framework that enhances Tailwind CSS with additional
+                                        styles and components.
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li></li>
+                        <!-- Accordion Item 5 -->
+                        <div class="border-b border-slate-200">
+                            <button onclick="toggleAccordion(1)"
+                                class="w-full flex justify-between items-center py-5 text-slate-800">
+                                <span> 5. Are you a native English speaker ?</span>
+                                <span id="icon-1" class="text-slate-800 transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                        class="w-4 h-4">
+                                        <path
+                                            d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                <div class="pb-5 text-sm text-slate-500">
+                                    Material Tailwind is a framework that enhances Tailwind CSS with additional
+                                    styles and components.
+                                </div>
+                            </div>
+                        </div>
+                        </li>
+                    </ol>
+
+                </div>
+                <div>
+                    <img class="mx-1 mb-20 flex max-w-md" src="assets/img/FAQs.svg" alt="Our aim image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleAccordion(index) {
+            const content = document.getElementById(`content-${index}`);
+            const icon = document.getElementById(`icon-${index}`);
+
+            // SVG for Minus icon
+            const minusSVG = `
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+          <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+        </svg>
+      `;
+
+            // SVG for Plus icon
+            const plusSVG = `
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+          <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+        </svg>
+      `;
+
+            // Toggle the content's max-height for smooth opening and closing
+            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                content.style.maxHeight = '0';
+                icon.innerHTML = plusSVG;
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.innerHTML = minusSVG;
+            }
+        }
+    </script>
+
+
+    <!-- Team  section -->
+
+
+    <section id="faq" class="bg-white ml- px-34">
+        <div class="text-center">
+            <h2 class=" text-4xl font-bold text-center mb-8">OUR TEAM</h2>
+
+            <div class="box-border hover:box-content h-screen mx-28>
+                <h2 class=" text-4xl font-bold text-center mb-8">
+                <p class="mx-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error commodi incidunt nobis facere,
+                    molestiae voluptas accusamus dolore consectetur obcaecati vero iure delectus animi culpa eius
+                    quisquam laboriosam. Ea, consequuntur officiis? Harum eum necessitatibus temporibus.</p>
+                </h2>
+                <div class="container mx-auto px-4 text-center flex p-32[40px] space-x-12 rounded-2xl">
+
+                    <div class="box1 hover:bg-gray-400x  hover:shadow-lg transition-all duration-300">
+                        <img src="assets/img/t1.jpg" alt="">
+                        <h2>
+                            <p>Mitchel Jonsion</p>
+                        </h2>
+                        <h3 class="text-[#aab0bc]">Content Creater</h3>
+                        <div class="flex">
+                            <img src="assets/img/instagram.png" class="max-h-6 mx-1 hover:bg-slate-200 " alt="">
+                            <img src="assets/img/facebook.png" class="max-h-6 mx-1 hover:bg-slate-200 " alt="">
+                            <img src="assets/img/tik-tok.png" class="max-h-6 mx-1 hover:bg-slate-200 " alt="">
+                            <img src="assets/img/twitter.png" class="max-h-6 mx-1 hover:bg-slate-200 " alt="">
+                            <img src="assets/img/youtube.png" class="max-h-6 mx-1 hover:bg-slate-200 " alt="">
+                        </div>
+
+                    </div>
+                    <div class="box1  hover:bg-gray-400x  hover:shadow-lg transition-all duration-300">
+                        <img src="assets/img/t2.jpg" alt="">
+                        <h2>
+                            <p>Mitchel Starck</p>
+                        </h2>
+                        <h3 class="text-[#aab0bc]">Vidio Creater</h3>
+                        <div class="flex">
+                            <img class="max-h-6 mx-1" src="assets/img/instagram.png" alt="">
+                            <img class="max-h-6 mx-1" src="assets/img/facebook.png" alt="">
+                            <img class="max-h-6 mx-1" src="assets/img/tik-tok.png" alt="">
+                            <img class="max-h-6 mx-1" src="assets/img/twitter.png" alt="">
+                            <img class="max-h-6 mx-1" src="assets/img/youtube.png" alt="">
+                        </div>
+                    </div>
+                    <div class="box1  hover:bg-gray-400x  hover:shadow-lg transition-all duration-300">
+                        <img src="assets/img/t3.jpg" alt="">
+                        <h2>
+                            <p>Dell Stain</p>
+                        </h2>
+                        <h3 class="text-[#aab0bc]">Social Media Manager</h3>
+                        <div class="flex">
+                            <img class="max-h-6 mx-1" src="assets/img/instagram.png" alt="">
+                            <img class="max-h-6 mx-1" src="assets/img/facebook.png" alt="">
+                            <img class="max-h-6 mx-1" src="assets/img/tik-tok.png" alt="">
+                            <img class="max-h-6 mx-1" src="assets/img/twitter.png" alt="">
+                            <img class="max-h-6 mx-1" src="assets/img/youtube.png" alt="">
+
+                        </div>
+
+                    </div>
+                    <div class="box1  hover:bg-gray-400x  hover:shadow-lg transition-all duration-300">
+                        <img src="assets/img/t4.jpg" alt="">
+                        <h2>
+                            <p>Sarrah Tailor</p>
+                        </h2>
+                        <h3 class="text-[#aab0bc]">Vidio Creater</h3>
+                        <div class="flex">
+
+                            <img class="max-h-6 mx-1" src="assets/img/instagram.png" alt="">
+                            <img class="max-h-6 mx-1" src="assets/img/facebook.png" alt="">
+                            <img class="max-h-6 mx-1" src="assets/img/tik-tok.png" alt="">
+                            <img class="max-h-6 mx-1" src="assets/img/twitter.png" alt="">
+                            <img class="max-h-6 mx-1" src="assets/img/youtube.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /section -->
+
+
+
+    <!-- About Section -->
+    <section id="about" class="bg-[#BBE9FF]">
+        <div class="container mx-auto px-20">
+            <h2 class="text-4xl font-bold text-center mb-4">About Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="mt-24">
+                    <h3 class="text-2xl font-semibold mb-4">Our Vission</h3>
+                    <p class="text-gray-700 flex pt-24">
+                        As a dedicated college student, my primary goal is to excel academically while building
+                        practical
+                        skills that will prepare me for a successful career. I aim to apply my knowledge through
+                        internships, projects, and leadership roles, constantly seeking opportunities to grow both
+                        professionally and personally.
+                    </p>
+
+                    <p class="text-gray-700 flex pt-12">
+                        As a dedicated college student, my primary goal is to excel academically while building
+                        practical
+                        skills that will prepare me for a successful career. I aim to apply my knowledge through
+                        internships, projects, and leadership roles, constantly seeking opportunities to grow both
+                        professionally and personally.
+                    </p>
+
+                </div>
+                <div>
+                    <img class="mx-1 flex hover:md" src="assets/img/About.svg" alt="Our about image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Register Section -->
+
+    <section id="register" class="bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8">Registation</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-64">
+                <div class="pt-20">
+                    
+                    <form class="space-y-6 mx-10 py-10">
+                        <!-- Username -->
+                        <div>
+                            <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+                            <input type="text" id="username" name="username"
+                                class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                                placeholder="Enter your username" required>
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email"
+                                class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                                placeholder="Enter your email" required>
+                        </div>
+
+                        <!-- Password -->
+                        <div>
+                            <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                            <input type="password" id="password" name="password"
+                                class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                                placeholder="Enter your password" required>
+                        </div>
+
+                        <!-- Confirm Password -->
+                        <div>
+                            <label for="confirm-password" class="block text-sm font-medium text-gray-700">Confirm
+                                Password</label>
+                            <input type="password" id="confirm-password" name="confirm-password"
+                                class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                                placeholder="Confirm your password" required>
+                        </div>
+
+                        <!-- Register Button -->
+                        <div>
+                            <button type="submit"
+                                class="w-full px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                                Register
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+                <div>
+                    <img class="mx-1 my-0 flex max-w-md" src="assets/img/register.svg" alt="Our aim image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <footer id="contact" class="bg-[#BBE9FF] text-[#d58d3a] py-8">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-xl font-bold mb-2">Get in Touch</h3>
+            <p>Email: contact@collgewalla.com | Phone: +91 7482812585</p>
+            <p class="mt-4">&copy; 2024 collegewalla. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
